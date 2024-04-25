@@ -13,7 +13,7 @@ function App() {
   return (
    <div>
     <div className='App-container'>
-    <Sidebar/>
+    <Sidebar selectedTab={selectedTab} setselectedTab={setselectedTab}></Sidebar>
     <div className='Content'>
     <Header /> 
     { selectedTab === "Home" ? (<PostList/>) : (<FormComponent/>)
